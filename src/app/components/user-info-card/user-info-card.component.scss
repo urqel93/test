@@ -1,43 +1,48 @@
 @import '../../../assets/variables/colors';
 
 .user-info-card {
-  background: $white;
   position: absolute;
   top: 36px;
-  box-shadow: 0 0 4px 0 rgba(172, 172, 172, 0.50);
-  border-radius: 5px;
-  width: calc(100% - 34px);
-  margin: 0 17px 10px 17px;
-  padding: 20px;
+  width: 100%;
+  .card {
+    box-shadow: 0 0 4px 0 rgba(172, 172, 172, 0.50);
+    border-radius: 5px;
+    margin: 0 17px 10px 17px;
+    padding: 20px;
+    background: $white;
+  }
   .image {
     border-radius: 50%;
     width: 70px;
     height: 70px;
   }
-  .main-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color: $main-blue;
-    letter-spacing: 0;
-    padding: 18px 10px 0 18px;
-  }
-  .secondary-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    color: $secondary-text;
-    letter-spacing: 0;
-    padding-left: 18px;
-  }
-  .icon {
-    padding-top: 24px;
-    color: $icon-color;
-  }
-
   .share-icon {
     position: absolute;
     top: 20px;
     right: 20px;
     color: $main-orange;
+    font-size: 10px;
+  }
+  .user-data {
+    .main-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      color: $main-blue;
+      letter-spacing: 0;
+      padding: 18px 10px 0 18px;
+      font-weight: 500;
+    }
+    .secondary-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      color: $secondary-text;
+      letter-spacing: 0;
+      padding-left: 18px;
+    }
+    .icon {
+      padding-top: 24px;
+      color: $icon-color;
+    }
   }
   .mt-20 {
     margin-top: 20px;
@@ -70,13 +75,13 @@
         padding: 0 50px;
       }
       .special:before {
-        content: '';
-        height: 38px;
-        width: 1px;
-        background-color: #979797;
-        opacity: 0.2;
-        position: absolute;
-        margin-top: 10px;
+        //content: '';
+        //height: 38px;
+        //width: 1px;
+        //background-color: #979797;
+        //opacity: 0.2;
+        //position: absolute;
+        //margin-top: 10px;
       }
     }
     .special:after {
@@ -107,6 +112,24 @@
   }
 
   @media only screen and (max-width: 768px) {
+    .image {
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      top: -48px;
+      left: 0;
+      right: 0;
+    }
+    .user-data {
+      width: 100%;
+      text-align: center;
+      .heart {
+        justify-content: center;
+      }
+    }
     .list {
       display: block;
       .menu-left {
@@ -129,23 +152,23 @@
           }
         }
         .special:before {
-          content: "";
-          display: block;
-          height: 38px;
-          width: 1px;
-          background-color: #979797;
-          opacity: 0.2;
-          margin-top: 10px;
-          margin-right: 20px;
+          //content: "";
+          //display: block;
+          //height: 38px;
+          //width: 1px;
+          //background-color: #979797;
+          //opacity: 0.2;
+          //margin-top: 10px;
+          //margin-right: 20px;
         }
         .special:after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 1px;
-          height: 29px;
-          background-color: #bbb;
+          //content: "";
+          //position: absolute;
+          //top: 0;
+          //left: 0;
+          //width: 1px;
+          //height: 29px;
+          //background-color: #bbb;
         }
       }
       .menu-right {
@@ -157,6 +180,7 @@
         }
       }
     }
+
   }
 
 }

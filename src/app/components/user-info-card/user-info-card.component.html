@@ -1,40 +1,45 @@
 <div class="user-info-card">
-  <i class="fas fa-share-square share-icon"></i>
-  <div class="d-flex">
-    <img class="image" src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"/>
-    <div>
-      <div class="d-flex">
-        <div class="main-text">Harvey Spencer</div>
-        <i class="far fa-heart icon"></i>
-      </div>
-      <div class="secondary-text">New York, USA</div>
+  <div class="card">
+    <i class="fas fa-share-square share-icon"></i>
+    <div class="d-flex">
+      <img class="image" src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"/>
+      <div class="user-data">
+        <div class="d-flex heart">
+          <div class="main-text">Harvey Spencer</div>
+          <i class="far fa-heart icon"></i>
+        </div>
+        <div class="secondary-text">New York, USA</div>
 
+      </div>
+    </div>
+    <div class="list mt-20">
+      <div class="menu-left d-flex">
+        <div class="stats">
+          <div>
+            <div class="orange-text">121</div>
+            <div class="small-text">Likes</div>
+          </div>
+        </div>
+        <div class="stats special">
+          <div>
+            <div class="orange-text">723</div>
+            <div class="small-text">Following</div>
+          </div>
+        </div>
+        <div class="stats">
+          <div>
+            <div class="orange-text">723</div>
+            <div class="small-text">Following</div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-right">
+        <button class="main-button">FOLLOW</button>
+      </div>
     </div>
   </div>
-  <div class="list mt-20">
-    <div class="menu-left d-flex">
-      <div class="stats">
-        <div>
-          <div class="orange-text">121</div>
-          <div class="small-text">Likes</div>
-        </div>
-      </div>
-      <div class="stats special">
-        <div>
-          <div class="orange-text">723</div>
-          <div class="small-text">Following</div>
-        </div>
-      </div>
-      <div class="stats">
-        <div>
-          <div class="orange-text">723</div>
-          <div class="small-text">Following</div>
-        </div>
-      </div>
-    </div>
-    <div class="menu-right">
-      <button class="main-button">FOLLOW</button>
-    </div>
+  <div class="card overflow" style="height: 500px">
+    <app-comments-card></app-comments-card>
   </div>
 </div>
 

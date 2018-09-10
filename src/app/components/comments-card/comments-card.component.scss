@@ -1,0 +1,46 @@
+@import '../../../assets/variables/colors';
+
+.comments-card {
+  overflow: auto;
+  .comment {
+    padding-top: 30px;
+  }
+  .hide-comments {
+    color: $main-orange;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-decoration: underline;
+  }
+  .avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .text {
+    padding: 10px 0 0 10px;
+    .main-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: $main-blue;
+      letter-spacing: 0;
+      font-weight: 500;
+    }
+    .secondary-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: $comments-text;
+      letter-spacing: 0;
+      line-height: 21px;
+    }
+  }
+  .day {
+    opacity: 0.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color:$main-blue;
+    letter-spacing: 0;
+    position: absolute;
+    right: 20px;
+  }
+}
