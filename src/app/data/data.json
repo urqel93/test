@@ -1,0 +1,48 @@
+{
+  "profile": {
+    "user": {
+      "name": "Harvey Spencer",
+      "address": "New York, USA",
+      "avatar": "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50",
+      "likes": 123,
+      "following": 345,
+      "followers": 456
+    },
+    "comments": [
+      {
+        "user": {
+          "name": "Janusz Tracz",
+          "avatar": "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
+        },
+        "text": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.",
+        "date": 1536700851520
+      },
+      {
+        "user": {
+          "name": "Mike Evans",
+          "avatar": "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
+        },
+        "text": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.",
+        "date": 1536700851520
+      },
+      {
+        "user": {
+          "name": "Luke Skywalker",
+          "avatar": "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
+        },
+        "text": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.",
+        "date": 1536700851520
+      },
+      {
+        "user": {
+          "name": "Jax Teller",
+          "avatar": "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
+        },
+        "text": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.",
+        "date": 1536700851520
+      }
+
+    ]
+  }
+}
+

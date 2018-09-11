@@ -1,12 +1,12 @@
 <div class="user-info-card">
-  <div class="card">
+  <div class="card" id="first-card">
     <i class="fas fa-share-square share-icon"></i>
     <div class="d-flex">
       <img class="image" src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"/>
       <div class="user-data">
         <div class="d-flex heart">
           <div class="main-text">Harvey Spencer</div>
-          <i class="far fa-heart icon"></i>
+          <i class="far fa-heart icon" [ngClass]="{'fas active' : isLike === true }" (click)="likeProfile(true)"></i>
         </div>
         <div class="secondary-text">New York, USA</div>
 
@@ -16,29 +16,29 @@
       <div class="menu-left d-flex">
         <div class="stats">
           <div>
-            <div class="orange-text">121</div>
+            <div class="orange-text">{{likes}}</div>
             <div class="small-text">Likes</div>
           </div>
         </div>
         <div class="stats special">
           <div>
-            <div class="orange-text">723</div>
+            <div class="orange-text">458</div>
             <div class="small-text">Following</div>
           </div>
         </div>
         <div class="stats">
           <div>
-            <div class="orange-text">723</div>
-            <div class="small-text">Following</div>
+            <div class="orange-text">{{followersNumber}}</div>
+            <div class="small-text">Followers</div>
           </div>
         </div>
       </div>
       <div class="menu-right">
-        <button class="main-button">FOLLOW</button>
+        <button class="main-button" (click)="followProfile()">{{isFollowing === false ? 'FOLLOW': 'UNFOLLOW'}}</button>
       </div>
     </div>
   </div>
-  <div class="card overflow" style="height: 500px">
+  <div class="card card-comments overflow">
     <app-comments-card></app-comments-card>
   </div>
 </div>

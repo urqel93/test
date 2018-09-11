@@ -1,105 +1,59 @@
 <div class="comments-card">
-  <div class="hide-comments">Hide comments(353)</div>
-  <div class="comment">
-    <div class="d-flex">
-      <img class="avatar" src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="">
-      <div class="text">
-        <div class="main-text">
-          Mike Evans
+  <div class="hide-comments" (click)="toggle()">Hide comments(353)</div>
+  <div *ngIf="showComments">
+    <div class="comment">
+      <div class="d-flex">
+        <img class="avatar" src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="">
+        <div class="text">
+          <div class="main-text">
+            Mike Evans
+          </div>
+          <div class="secondary-text">
+            Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas
+            malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
+          </div>
         </div>
-        <div class="secondary-text">
-          Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas
-          malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
+        <div class="day">
+          1d
         </div>
       </div>
-      <div class="day">
-        1d
+    </div>
+    <div class="comment">
+      <div class="d-flex">
+        <img class="avatar" src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="">
+        <div class="text">
+          <div class="main-text">
+            Mike Evans
+          </div>
+          <div class="secondary-text">
+            Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas
+            malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
+          </div>
+        </div>
+        <div class="day">
+          1d
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <div class="d-flex">
+        <img class="avatar" src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="">
+        <div class="text">
+          <div class="main-text">
+            Mike Evans
+          </div>
+          <div class="secondary-text">
+            Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas
+            malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
+          </div>
+        </div>
+        <div class="day">
+          1d
+        </div>
       </div>
     </div>
   </div>
-  <div class="comment">
-    <div class="d-flex">
-      <img class="avatar" src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="">
-      <div class="text">
-        <div class="main-text">
-          Mike Evans
-        </div>
-        <div class="secondary-text">
-          Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas
-          malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
-        </div>
-      </div>
-      <div class="day">
-        1d
-      </div>
-    </div>
-  </div>
-  <div class="comment">
-    <div class="d-flex">
-      <img class="avatar" src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="">
-      <div class="text">
-        <div class="main-text">
-          Mike Evans
-        </div>
-        <div class="secondary-text">
-          Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas
-          malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
-        </div>
-      </div>
-      <div class="day">
-        1d
-      </div>
-    </div>
-  </div>
-  <div class="comment">
-    <div class="d-flex">
-      <img class="avatar" src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="">
-      <div class="text">
-        <div class="main-text">
-          Mike Evans
-        </div>
-        <div class="secondary-text">
-          Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas
-          malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
-        </div>
-      </div>
-      <div class="day">
-        1d
-      </div>
-    </div>
-  </div>
-  <div class="comment">
-    <div class="d-flex">
-      <img class="avatar" src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="">
-      <div class="text">
-        <div class="main-text">
-          Mike Evans
-        </div>
-        <div class="secondary-text">
-          Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas
-          malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
-        </div>
-      </div>
-      <div class="day">
-        1d
-      </div>
-    </div>
-  </div>
-  <div class="comment">
-    <div class="d-flex">
-      <img class="avatar" src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="">
-      <div class="text">
-        <div class="main-text">
-          Mike Evans
-        </div>
-        <div class="secondary-text">
-          Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas
-          malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
-        </div>
-      </div>
-      <div class="day">
-        1d
-      </div>
-    </div>
+  <div class="input-field">
+    <input type="text" placeholder="Add a comment">
   </div>
 </div>

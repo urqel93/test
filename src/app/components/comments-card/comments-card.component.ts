@@ -7,5 +7,11 @@ import {Component} from '@angular/core';
 })
 
 export class CommentsCardComponent {
+  showComments = true;
+
+  toggle(){
+    this.showComments = !this.showComments;
+  }
+
 
 }

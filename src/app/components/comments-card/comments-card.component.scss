@@ -1,9 +1,10 @@
 @import '../../../assets/variables/colors';
 
 .comments-card {
-  overflow: auto;
   .comment {
-    padding-top: 30px;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #EBEBEB;;
   }
   .hide-comments {
     color: $main-orange;
@@ -11,6 +12,7 @@
     font-size: 14px;
     letter-spacing: 0;
     text-decoration: underline;
+    cursor: pointer;
   }
   .avatar {
     border-radius: 50%;
@@ -38,9 +40,28 @@
     opacity: 0.5;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    color:$main-blue;
+    color: $main-blue;
     letter-spacing: 0;
     position: absolute;
     right: 20px;
+  }
+  .input-field {
+    width: 100%;
+    text-align: center;
+    input[type=text] {
+      border: none;
+      border-bottom: 2px solid #DBE0E8;
+      font-size: 18px;
+      color: #8298B9;
+      letter-spacing: 0;
+      width: 100%;
+      padding-top: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hide-comments {
+    text-align: center;
   }
 }
