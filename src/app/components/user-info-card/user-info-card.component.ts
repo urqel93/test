@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {IProfile} from '../../core/interfaces';
 
 @Component({
   selector: 'app-user-info-card',
@@ -6,12 +7,26 @@ import {Component} from '@angular/core';
   styleUrls: ['./user-info-card.component.scss']
 })
 
-export class UserInfoCardComponent {
+export class UserInfoCardComponent implements OnInit {
+
+  @Input() userProfile: IProfile;
 
   isLike = false;
-  likes = 125;
-  followersNumber = 350;
+  likes: number;
+  following: number;
+  followersNumber: number;
   isFollowing = false;
+
+  ngOnInit() {
+    this.setData();
+  }
+
+  setData() {
+    this.likes = this.userProfile.user.likes;
+    this.followersNumber = this.userProfile.user.followers;
+    this.following = this.userProfile.user.following;
+
+  }
 
   likeProfile() {
     this.isLike = !this.isLike;
@@ -21,6 +36,10 @@ export class UserInfoCardComponent {
   followProfile() {
     this.isFollowing = !this.isFollowing;
     this.isFollowing ? this.followersNumber++ : this.followersNumber--;
+  }
+
+  getLocation() {
+    alert('App location: ' + window.location);
   }
 
 }

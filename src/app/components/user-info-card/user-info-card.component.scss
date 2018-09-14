@@ -6,6 +6,7 @@
   width: 100%;
   .overflow{
     overflow-y: auto;
+    overflow-x: hidden;
   }
   .card {
     box-shadow: 0 0 4px 0 rgba(172, 172, 172, 0.50);
@@ -65,10 +66,11 @@
   .list {
     display: flex;
     .menu-left {
-      width: 50%;
+      width: 60%;
       float: left;
       .stats {
         display: flex;
+        min-width: 50px;
         .orange-text {
           font-family: 'Montserrat', sans-serif;
           font-size: 24px;
@@ -100,7 +102,7 @@
     }
 
     .menu-right {
-      width: 50%;
+      width: 40%;
       float: right;
       .main-button {
         color: $white;
@@ -150,6 +152,7 @@
           width: 33%;
           justify-content: center;
           .orange-text {
+            min-width: 50px;
             font-family: 'Montserrat', sans-serif;
             font-size: 24px;
             color: $main-orange;

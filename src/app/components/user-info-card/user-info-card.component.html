@@ -1,14 +1,14 @@
-<div class="user-info-card">
+<div class="user-info-card" *ngIf="userProfile">
   <div class="card" id="first-card">
-    <i class="fas fa-share-square share-icon"></i>
+    <i class="fas fa-share-square share-icon" (click)="getLocation()"></i>
     <div class="d-flex">
-      <img class="image" src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"/>
+      <img class="image" src="{{userProfile.user.avatar}}"/>
       <div class="user-data">
         <div class="d-flex heart">
-          <div class="main-text">Harvey Spencer</div>
+          <div class="main-text">{{userProfile.user.name}}</div>
           <i class="far fa-heart icon" [ngClass]="{'fas active' : isLike === true }" (click)="likeProfile(true)"></i>
         </div>
-        <div class="secondary-text">New York, USA</div>
+        <div class="secondary-text">{{userProfile.user.address}}</div>
 
       </div>
     </div>
@@ -22,7 +22,7 @@
         </div>
         <div class="stats special">
           <div>
-            <div class="orange-text">458</div>
+            <div class="orange-text">{{following}}</div>
             <div class="small-text">Following</div>
           </div>
         </div>
@@ -39,7 +39,7 @@
     </div>
   </div>
   <div class="card card-comments overflow">
-    <app-comments-card></app-comments-card>
+    <app-comments-card [comments]="userProfile.comments"></app-comments-card>
   </div>
 </div>
 

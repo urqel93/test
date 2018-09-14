@@ -1,4 +1,4 @@
-<div class="profile-card">
+<div class="profile-card" *ngIf="userProfile as user">
   <div class="blue-bar"></div>
-  <app-user-info-card></app-user-info-card>
+  <app-user-info-card [userProfile]="user"></app-user-info-card>
 </div>

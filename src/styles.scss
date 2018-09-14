@@ -1,10 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 button:focus {outline:0 !important;}
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: black !important;
-  }
-}
 ::-webkit-scrollbar {
   width: 5px;
 }
